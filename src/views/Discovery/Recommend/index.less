@@ -1,0 +1,71 @@
+.rec-title {
+  width: 100%;
+  padding: 0.1rem;
+  color: #000;
+}
+.list-wrap {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.playlist-card {
+  position: relative;
+  width: calc(20% - 0.2rem);
+  margin: 0.1rem;
+  margin-bottom: 0.2rem;
+  cursor: pointer;
+  color: rgb(46, 45, 45);
+}
+.img-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  margin-bottom: 0.057143rem;
+  border-radius: 0.028571rem;
+  overflow: hidden;
+  img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.desc-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 0.1rem;
+  color: rgba(221, 219, 219, 0.959);
+  transition: all 0.3s;
+  font-size: 0.09rem;
+  height: 0.2rem;
+  line-height: 0.2rem;
+  background-color: rgba(61, 59, 59, 0.452);
+  width: 100%;
+  text-align: center;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+.desc-wrap-show {
+  transform: translateY(0%);
+  opacity: 1;
+}
+.play-icon {
+  position: absolute;
+  right: 0.06rem;
+  bottom: 0.26rem;
+  font-size: 0.2rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  color: #fff;
+  opacity: 0;
+}
+.name {
+  font-size: 0.09rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
