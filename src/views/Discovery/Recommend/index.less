@@ -15,6 +15,11 @@
   margin-bottom: 0.2rem;
   cursor: pointer;
   color: rgb(46, 45, 45);
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 3s;
+  will-change: transform;
+  border: 15px solid white;
+  border-radius: 5px;
 }
 .img-wrap {
   position: relative;
@@ -39,7 +44,7 @@
   left: 0;
   padding: 0 0.1rem;
   color: rgba(221, 219, 219, 0.959);
-  transition: all 0.3s;
+  transition: all 1s;
   font-size: 0.09rem;
   height: 0.2rem;
   line-height: 0.2rem;
@@ -58,8 +63,7 @@
   right: 0.06rem;
   bottom: 0.26rem;
   font-size: 0.2rem;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
+  transition: all 1s;
   color: #fff;
   opacity: 0;
 }

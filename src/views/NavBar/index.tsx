@@ -1,11 +1,12 @@
-import React, { memo, Fragment, FC, useState, ReactNode } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import React, { memo, Fragment, FC, ReactNode } from 'react';
+import { NavLink } from 'react-router-dom';
 import {
   PlaySquareOutlined,
   FileDoneOutlined,
   CustomerServiceOutlined,
   AntDesignOutlined,
 } from '@ant-design/icons';
+import { useSpring, animated } from 'react-spring';
 import './index.less';
 
 interface Props {}
@@ -37,15 +38,22 @@ const navBarList: NavBarList = [
   },
 ];
 const Index: FC<Props> = () => {
+  const props_: any = useSpring({
+    opacity: 1,
+    x: 0,
+    from: { opacity: 0, x: -50 },
+    delay: 100,
+  });
+
   return (
     <Fragment>
       {navBarList.map((item) => {
         return (
           <NavLink to={item.path} key={item.path}>
-            <div className="item">
+            <animated.div className="item" style={props_}>
               {item.icon}
               <span style={{ paddingLeft: 10 }}> {item.title}</span>
-            </div>
+            </animated.div>
           </NavLink>
         );
       })}

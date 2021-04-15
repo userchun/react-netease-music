@@ -266,6 +266,86 @@
   resolved "https://registry.npm.taobao.org/@ctrl/tinycolor/download/@ctrl/tinycolor-3.4.0.tgz"
   integrity sha1-w8WuVDyJfKqcKmhjC+01W+X5mQ8=
 
+"@react-spring/animated@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.npm.taobao.org/@react-spring/animated/download/@react-spring/animated-9.1.1.tgz#996db774bbc42fb37838580674c4ade4f2d99f20"
+  integrity sha1-mW23dLvEL7N4OFgGdMSt5PLZnyA=
+  dependencies:
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
+
+"@react-spring/core@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.npm.taobao.org/@react-spring/core/download/@react-spring/core-9.1.1.tgz#0d109c9f921bf957dcb65340a4192061f28e5cb2"
+  integrity sha1-DRCcn5Ib+VfctlNApBkgYfKOXLI=
+  dependencies:
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
+
+"@react-spring/konva@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.npm.taobao.org/@react-spring/konva/download/@react-spring/konva-9.1.1.tgz#811b4baed651b9ffb8eb40caec7e80b6af6f446c"
+  integrity sha1-gRtLrtZRuf+460DK7H6Atq9vRGw=
+  dependencies:
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
+
+"@react-spring/native@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.npm.taobao.org/@react-spring/native/download/@react-spring/native-9.1.1.tgz#484d335372ed180bebb9edcfde8b7d4370239207"
+  integrity sha1-SE0zU3LtGAvrue3P3ot9Q3Ajkgc=
+  dependencies:
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
+
+"@react-spring/shared@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.npm.taobao.org/@react-spring/shared/download/@react-spring/shared-9.1.1.tgz#9f7b1a4051a0c71e0167805e7d499071b2aabddc"
+  integrity sha1-n3saQFGgxx4BZ4BefUmQcbKqvdw=
+  dependencies:
+    "@react-spring/types" "~9.1.1"
+    rafz "^0.1.14"
+
+"@react-spring/three@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.npm.taobao.org/@react-spring/three/download/@react-spring/three-9.1.1.tgz#ba06152963ae592f6fb3e10487c325e623261788"
+  integrity sha1-ugYVKWOuWS9vs+EEh8Ml5iMmF4g=
+  dependencies:
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
+
+"@react-spring/types@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.npm.taobao.org/@react-spring/types/download/@react-spring/types-9.1.1.tgz#0e53317018b81c4716a776e65477c8b0ee62758e"
+  integrity sha1-DlMxcBi4HEcWp3bmVHfIsO5idY4=
+
+"@react-spring/web@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.npm.taobao.org/@react-spring/web/download/@react-spring/web-9.1.1.tgz#f7ff454631d0e495887ed4631672982e1e6fb500"
+  integrity sha1-9/9FRjHQ5JWIftRjFnKYLh5vtQA=
+  dependencies:
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
+
+"@react-spring/zdog@~9.1.1":
+  version "9.1.1"
+  resolved "https://registry.npm.taobao.org/@react-spring/zdog/download/@react-spring/zdog-9.1.1.tgz#8a79a957a89141bf2281b597e98d9a8327a6ba15"
+  integrity sha1-inmpV6iRQb8igbWX6Y2agyemuhU=
+  dependencies:
+    "@react-spring/animated" "~9.1.1"
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/shared" "~9.1.1"
+    "@react-spring/types" "~9.1.1"
+
 "@rollup/pluginutils@^4.1.0":
   version "4.1.0"
   resolved "https://registry.npm.taobao.org/@rollup/pluginutils/download/@rollup/pluginutils-4.1.0.tgz"
@@ -877,6 +957,11 @@ prop-types@^15.6.2, prop-types@^15.7.2:
     object-assign "^4.1.1"
     react-is "^16.8.1"
 
+rafz@^0.1.14:
+  version "0.1.14"
+  resolved "https://registry.npm.taobao.org/rafz/download/rafz-0.1.14.tgz#164f01cf7cc6094e08467247ef351ef5c8d278fe"
+  integrity sha1-Fk8Bz3zGCU4IRnJH7zUe9cjSeP4=
+
 rc-align@^4.0.0:
   version "4.0.9"
   resolved "https://registry.npm.taobao.org/rc-align/download/rc-align-4.0.9.tgz"
@@ -1297,6 +1382,18 @@ react-slick@^0.28.1:
     json2mq "^0.2.0"
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
+
+react-spring@^9.1.1:
+  version "9.1.1"
+  resolved "https://registry.npm.taobao.org/react-spring/download/react-spring-9.1.1.tgz#0771de37421501be2121631cff2b36d0331770e2"
+  integrity sha1-B3HeN0IVAb4hIWMc/ys20DMXcOI=
+  dependencies:
+    "@react-spring/core" "~9.1.1"
+    "@react-spring/konva" "~9.1.1"
+    "@react-spring/native" "~9.1.1"
+    "@react-spring/three" "~9.1.1"
+    "@react-spring/web" "~9.1.1"
+    "@react-spring/zdog" "~9.1.1"
 
 react@^17.0.0:
   version "17.0.2"

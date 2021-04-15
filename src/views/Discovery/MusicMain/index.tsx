@@ -1,12 +1,4 @@
-import React, {
-  memo,
-  Fragment,
-  FC,
-  useEffect,
-  useState,
-  useCallback,
-  useMemo,
-} from 'react';
+import React, { memo, Fragment, FC, useEffect, useState, useMemo } from 'react';
 import { getNewSong } from '@/api';
 import Loading from '@/components/Loading';
 import { PlayCircleOutlined } from '@ant-design/icons';
