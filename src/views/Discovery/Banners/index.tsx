@@ -6,7 +6,7 @@ import React, {
   useState,
   useCallback,
 } from 'react';
-import { getBanner } from '../../../api';
+import { getBanner } from '@/api';
 import Slider from 'react-slick';
 
 import './index.less';

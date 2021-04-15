@@ -1,6 +1,6 @@
 import React, { memo, Fragment, FC, useEffect, useState } from 'react';
-import { getPersonalized } from '../../../api';
-import Loading from '../../../components/Loading';
+import { getPersonalized } from '@/api';
+import Loading from '@/components/Loading';
 import { PlayCircleOutlined } from '@ant-design/icons';
 import './index.less';
 interface Props {}

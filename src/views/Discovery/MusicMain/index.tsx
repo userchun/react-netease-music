@@ -7,8 +7,8 @@ import React, {
   useCallback,
   useMemo,
 } from 'react';
-import { getNewSong } from '../../../api';
-import Loading from '../../../components/Loading';
+import { getNewSong } from '@/api';
+import Loading from '@/components/Loading';
 import { PlayCircleOutlined } from '@ant-design/icons';
 import './index.less';
 interface Props {}
