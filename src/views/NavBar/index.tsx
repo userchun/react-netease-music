@@ -6,7 +6,7 @@ import {
   CustomerServiceOutlined,
   AntDesignOutlined,
 } from '@ant-design/icons';
-import { useSpring, animated } from 'react-spring';
+
 import './index.less';
 
 interface Props {}
@@ -38,22 +38,15 @@ const navBarList: NavBarList = [
   },
 ];
 const Index: FC<Props> = () => {
-  const props_: any = useSpring({
-    opacity: 1,
-    x: 0,
-    from: { opacity: 0, x: -50 },
-    delay: 100,
-  });
-
   return (
     <Fragment>
       {navBarList.map((item) => {
         return (
           <NavLink to={item.path} key={item.path}>
-            <animated.div className="item" style={props_}>
+            <div className="item">
               {item.icon}
               <span style={{ paddingLeft: 10 }}> {item.title}</span>
-            </animated.div>
+            </div>
           </NavLink>
         );
       })}

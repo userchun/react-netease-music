@@ -7,6 +7,7 @@
     "build": "tsc && vite build"
   },
   "dependencies": {
+    "@types/react-lazyload": "^3.1.0",
     "@types/react-redux": "^7.1.16",
     "@types/redux": "^3.6.0",
     "amfe-flexible": "^2.2.1",
@@ -15,11 +16,12 @@
     "lodash": "^4.17.21",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
+    "react-lazyload": "^3.2.0",
     "react-redux": "^7.2.3",
     "react-router-config": "^5.1.1",
     "react-router-dom": "^5.2.0",
     "react-slick": "^0.28.1",
-    "react-spring": "^9.1.1",
+    "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",
     "slick-carousel": "^1.8.1",
     "vite-plugin-importer": "^0.2.1",

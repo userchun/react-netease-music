@@ -222,7 +222,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.1", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.4", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.1.2", "@babel/runtime@^7.10.1", "@babel/runtime@^7.10.2", "@babel/runtime@^7.10.4", "@babel/runtime@^7.11.1", "@babel/runtime@^7.11.2", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.5.5", "@babel/runtime@^7.8.4", "@babel/runtime@^7.8.7":
   version "7.13.10"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.13.10.tgz"
   integrity sha1-R9QqV7YJX0Ro2kQDiP262L6/DX0=
@@ -266,86 +266,6 @@
   resolved "https://registry.npm.taobao.org/@ctrl/tinycolor/download/@ctrl/tinycolor-3.4.0.tgz"
   integrity sha1-w8WuVDyJfKqcKmhjC+01W+X5mQ8=
 
-"@react-spring/animated@~9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npm.taobao.org/@react-spring/animated/download/@react-spring/animated-9.1.1.tgz#996db774bbc42fb37838580674c4ade4f2d99f20"
-  integrity sha1-mW23dLvEL7N4OFgGdMSt5PLZnyA=
-  dependencies:
-    "@react-spring/shared" "~9.1.1"
-    "@react-spring/types" "~9.1.1"
-
-"@react-spring/core@~9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npm.taobao.org/@react-spring/core/download/@react-spring/core-9.1.1.tgz#0d109c9f921bf957dcb65340a4192061f28e5cb2"
-  integrity sha1-DRCcn5Ib+VfctlNApBkgYfKOXLI=
-  dependencies:
-    "@react-spring/animated" "~9.1.1"
-    "@react-spring/shared" "~9.1.1"
-    "@react-spring/types" "~9.1.1"
-
-"@react-spring/konva@~9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npm.taobao.org/@react-spring/konva/download/@react-spring/konva-9.1.1.tgz#811b4baed651b9ffb8eb40caec7e80b6af6f446c"
-  integrity sha1-gRtLrtZRuf+460DK7H6Atq9vRGw=
-  dependencies:
-    "@react-spring/animated" "~9.1.1"
-    "@react-spring/core" "~9.1.1"
-    "@react-spring/shared" "~9.1.1"
-    "@react-spring/types" "~9.1.1"
-
-"@react-spring/native@~9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npm.taobao.org/@react-spring/native/download/@react-spring/native-9.1.1.tgz#484d335372ed180bebb9edcfde8b7d4370239207"
-  integrity sha1-SE0zU3LtGAvrue3P3ot9Q3Ajkgc=
-  dependencies:
-    "@react-spring/animated" "~9.1.1"
-    "@react-spring/core" "~9.1.1"
-    "@react-spring/shared" "~9.1.1"
-    "@react-spring/types" "~9.1.1"
-
-"@react-spring/shared@~9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npm.taobao.org/@react-spring/shared/download/@react-spring/shared-9.1.1.tgz#9f7b1a4051a0c71e0167805e7d499071b2aabddc"
-  integrity sha1-n3saQFGgxx4BZ4BefUmQcbKqvdw=
-  dependencies:
-    "@react-spring/types" "~9.1.1"
-    rafz "^0.1.14"
-
-"@react-spring/three@~9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npm.taobao.org/@react-spring/three/download/@react-spring/three-9.1.1.tgz#ba06152963ae592f6fb3e10487c325e623261788"
-  integrity sha1-ugYVKWOuWS9vs+EEh8Ml5iMmF4g=
-  dependencies:
-    "@react-spring/animated" "~9.1.1"
-    "@react-spring/core" "~9.1.1"
-    "@react-spring/shared" "~9.1.1"
-    "@react-spring/types" "~9.1.1"
-
-"@react-spring/types@~9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npm.taobao.org/@react-spring/types/download/@react-spring/types-9.1.1.tgz#0e53317018b81c4716a776e65477c8b0ee62758e"
-  integrity sha1-DlMxcBi4HEcWp3bmVHfIsO5idY4=
-
-"@react-spring/web@~9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npm.taobao.org/@react-spring/web/download/@react-spring/web-9.1.1.tgz#f7ff454631d0e495887ed4631672982e1e6fb500"
-  integrity sha1-9/9FRjHQ5JWIftRjFnKYLh5vtQA=
-  dependencies:
-    "@react-spring/animated" "~9.1.1"
-    "@react-spring/core" "~9.1.1"
-    "@react-spring/shared" "~9.1.1"
-    "@react-spring/types" "~9.1.1"
-
-"@react-spring/zdog@~9.1.1":
-  version "9.1.1"
-  resolved "https://registry.npm.taobao.org/@react-spring/zdog/download/@react-spring/zdog-9.1.1.tgz#8a79a957a89141bf2281b597e98d9a8327a6ba15"
-  integrity sha1-inmpV6iRQb8igbWX6Y2agyemuhU=
-  dependencies:
-    "@react-spring/animated" "~9.1.1"
-    "@react-spring/core" "~9.1.1"
-    "@react-spring/shared" "~9.1.1"
-    "@react-spring/types" "~9.1.1"
-
 "@rollup/pluginutils@^4.1.0":
   version "4.1.0"
   resolved "https://registry.npm.taobao.org/@rollup/pluginutils/download/@rollup/pluginutils-4.1.0.tgz"
@@ -376,6 +296,13 @@
   version "17.0.3"
   resolved "https://registry.npm.taobao.org/@types/react-dom/download/@types/react-dom-17.0.3.tgz?cache=0&sync_timestamp=1616459857029&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Freact-dom%2Fdownload%2F%40types%2Freact-dom-17.0.3.tgz"
   integrity sha1-f983uK+dbUAScTeGW7P/+IcdfuE=
+  dependencies:
+    "@types/react" "*"
+
+"@types/react-lazyload@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.npm.taobao.org/@types/react-lazyload/download/@types/react-lazyload-3.1.0.tgz#97b167266afbc75f432eca01c50555adae21c5a4"
+  integrity sha1-l7FnJmr7x19DLsoBxQVVra4hxaQ=
   dependencies:
     "@types/react" "*"
 
@@ -670,6 +597,14 @@ dom-align@^1.7.0:
   resolved "https://registry.npm.taobao.org/dom-align/download/dom-align-1.12.0.tgz"
   integrity sha1-VvtxVt8LkQmYMDZNLUj4iWP1opw=
 
+dom-helpers@^5.0.1:
+  version "5.2.0"
+  resolved "https://registry.npm.taobao.org/dom-helpers/download/dom-helpers-5.2.0.tgz#57fd054c5f8f34c52a3eeffdb7e7e93cd357d95b"
+  integrity sha1-V/0FTF+PNMUqPu/9t+fpPNNX2Vs=
+  dependencies:
+    "@babel/runtime" "^7.8.7"
+    csstype "^3.0.2"
+
 dot-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npm.taobao.org/dot-case/download/dot-case-3.0.4.tgz"
@@ -956,11 +891,6 @@ prop-types@^15.6.2, prop-types@^15.7.2:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
     react-is "^16.8.1"
-
-rafz@^0.1.14:
-  version "0.1.14"
-  resolved "https://registry.npm.taobao.org/rafz/download/rafz-0.1.14.tgz#164f01cf7cc6094e08467247ef351ef5c8d278fe"
-  integrity sha1-Fk8Bz3zGCU4IRnJH7zUe9cjSeP4=
 
 rc-align@^4.0.0:
   version "4.0.9"
@@ -1319,6 +1249,11 @@ react-is@^16.12.0, react-is@^16.13.1, react-is@^16.6.0, react-is@^16.7.0, react-
   resolved "https://registry.npm.taobao.org/react-is/download/react-is-16.13.1.tgz"
   integrity sha1-eJcppNw23imZ3BVt1sHZwYzqVqQ=
 
+react-lazyload@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npm.taobao.org/react-lazyload/download/react-lazyload-3.2.0.tgz?cache=0&sync_timestamp=1613046636258&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Freact-lazyload%2Fdownload%2Freact-lazyload-3.2.0.tgz#497bd06a6dbd7015e3376e1137a67dc47d2dd021"
+  integrity sha1-SXvQam29cBXjN24RN6Z9xH0t0CE=
+
 react-redux@^7.2.3:
   version "7.2.3"
   resolved "https://registry.npm.taobao.org/react-redux/download/react-redux-7.2.3.tgz#4c084618600bb199012687da9e42123cca3f0be9"
@@ -1383,17 +1318,15 @@ react-slick@^0.28.1:
     lodash.debounce "^4.0.8"
     resize-observer-polyfill "^1.5.0"
 
-react-spring@^9.1.1:
-  version "9.1.1"
-  resolved "https://registry.npm.taobao.org/react-spring/download/react-spring-9.1.1.tgz#0771de37421501be2121631cff2b36d0331770e2"
-  integrity sha1-B3HeN0IVAb4hIWMc/ys20DMXcOI=
+react-transition-group@^4.4.1:
+  version "4.4.1"
+  resolved "https://registry.npm.taobao.org/react-transition-group/download/react-transition-group-4.4.1.tgz#63868f9325a38ea5ee9535d828327f85773345c9"
+  integrity sha1-Y4aPkyWjjqXulTXYKDJ/hXczRck=
   dependencies:
-    "@react-spring/core" "~9.1.1"
-    "@react-spring/konva" "~9.1.1"
-    "@react-spring/native" "~9.1.1"
-    "@react-spring/three" "~9.1.1"
-    "@react-spring/web" "~9.1.1"
-    "@react-spring/zdog" "~9.1.1"
+    "@babel/runtime" "^7.5.5"
+    dom-helpers "^5.0.1"
+    loose-envify "^1.4.0"
+    prop-types "^15.6.2"
 
 react@^17.0.0:
   version "17.0.2"

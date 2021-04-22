@@ -1,12 +1,14 @@
 import React, { memo, Fragment, FC, useEffect } from 'react';
-import { useHistory, useLocation } from 'react-router-dom';
+import { useHistory, useLocation, Switch } from 'react-router-dom';
 import Header from '../Header';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 import './index.less';
 import { RouteConfig, renderRoutes } from 'react-router-config';
-interface Props {}
-const Index: FC<Props> = (props: any) => {
+interface Props {
+  route: RouteConfig;
+}
+const Index: FC<Props> = (props) => {
   const history = useHistory();
   const location = useLocation();
   useEffect(() => {
@@ -14,6 +16,10 @@ const Index: FC<Props> = (props: any) => {
       history.push('/home/discovery');
   }, []);
   const { routes }: RouteConfig = props?.route;
+
+  const currentRoute = routes?.find((v) => v.path === location.pathname);
+  document.title = currentRoute?.title;
+
   return (
     <Fragment>
       <Header />
@@ -21,7 +27,9 @@ const Index: FC<Props> = (props: any) => {
         <div className="navbar">
           <NavBar />
         </div>
-        <div className="content">{renderRoutes(routes)}</div>
+        <div className="content">
+          <Switch>{renderRoutes(routes)}</Switch>
+        </div>
       </div>
       <Footer />
     </Fragment>

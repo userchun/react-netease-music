@@ -2,22 +2,12 @@ import React, { memo, Fragment, FC, useEffect, useState } from 'react';
 import { getPersonalized } from '@/api';
 import Loading from '@/components/Loading';
 import { PlayCircleOutlined } from '@ant-design/icons';
-import { useSpring, animated } from 'react-spring';
+import LazyLoad from 'react-lazyload';
+import FulfLoading from '@/components/FulfLoading';
 import './index.less';
 interface Props {}
-const calc = (x: any, y: any) => [
-  -(y - window.innerHeight / 2) / 20,
-  (x - window.innerWidth / 2) / 20,
-  1.1,
-];
-const trans = (x: any, y: any, s: any) =>
-  `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 const Index: FC<Props> = () => {
-  const [props, set] = useSpring(() => ({
-    xys: [0, 0, 1],
-    config: { mass: 5, tension: 350, friction: 40 },
-  }));
   const [recomList, setRecomList] = useState([]);
   const [activeImg, setActiveImg] = useState<number>(-1);
   useEffect(() => {
@@ -43,18 +33,10 @@ const Index: FC<Props> = () => {
                     setActiveImg(index);
                   }}
                 >
-                  <animated.div
-                    className="img-wrap"
-                    onMouseMove={({ clientX: x, clientY: y }) =>
-                      set({ xys: calc(x, y) })
-                    }
-                    onMouseLeave={() => set({ xys: [0, 0, 1] })}
-                    style={{
-                      transform:
-                        activeImg === index ? props.xys.interpolate(trans) : '',
-                    }}
-                  >
+                  <div className="img-wrap">
+                    {/* <LazyLoad height={100} throttle={200}> */}
                     <img src={v.picUrl} alt="" />
+                    {/* </LazyLoad> */}
                     <div
                       title={v.copywriter}
                       className={
@@ -64,7 +46,8 @@ const Index: FC<Props> = () => {
                     >
                       {v.copywriter}
                     </div>
-                  </animated.div>
+                  </div>
+
                   <p data-v-5ee4ad8a="" className="name">
                     {v.name}
                   </p>

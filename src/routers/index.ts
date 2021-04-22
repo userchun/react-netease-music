@@ -5,6 +5,7 @@ const Discovery = lazy(() => import('../views/Discovery'));
 const Mvs = lazy(() => import('../views/Mvs'));
 const PlayList = lazy(() => import('../views/PlayLists'));
 const Songs = lazy(() => import('../views/Songs'));
+const Test = lazy(() => import('../views/Test'));
 const routes: RouteConfig[] = [
   {
     path: '/',
@@ -19,20 +20,29 @@ const routes: RouteConfig[] = [
       {
         path: '/home/discovery',
         component: Discovery,
+        title: 'discovery',
       },
       {
         path: '/home/mvs',
         component: Mvs,
+        title: 'mvs',
       },
       {
-        path: '/home/playlist',
+        path: '/home/playlists',
         component: PlayList,
+        title: 'playlist',
       },
       {
         path: '/home/songs',
         component: Songs,
+        title: 'songs',
       },
     ],
+  },
+  {
+    path: '/test',
+    component: Test,
+    title: 'test',
   },
 ];
 

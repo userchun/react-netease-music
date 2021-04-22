@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import { renderRoutes } from 'react-router-config';
-import { HashRouter, Switch } from 'react-router-dom';
+import { HashRouter, Switch, useLocation } from 'react-router-dom';
 import routers from './routers';
 import Loading from './components/Loading';
 import { Provider } from 'react-redux';
