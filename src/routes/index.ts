@@ -1,5 +1,6 @@
-import { lazy } from 'react';
+import React, { lazy } from 'react';
 import { RouteConfig } from 'react-router-config';
+import { Redirect } from 'react-router-dom';
 const Home = lazy(() => import('../views/Home'));
 const Discovery = lazy(() => import('../views/Discovery'));
 const Mvs = lazy(() => import('../views/Mvs'));
@@ -10,7 +11,7 @@ const routes: RouteConfig[] = [
   {
     path: '/',
     exact: true,
-    component: Home,
+    component: Test,
   },
   {
     path: '/home',

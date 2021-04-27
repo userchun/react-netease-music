@@ -37,6 +37,7 @@ const navBarList: NavBarList = [
     title: '最新MV',
   },
 ];
+
 const Index: FC<Props> = () => {
   return (
     <Fragment>

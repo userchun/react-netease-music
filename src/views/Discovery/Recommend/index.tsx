@@ -2,6 +2,7 @@ import React, { memo, Fragment, FC, useEffect, useState } from 'react';
 import { getPersonalized } from '@/api';
 import Loading from '@/components/Loading';
 import { PlayCircleOutlined } from '@ant-design/icons';
+import { Transition } from 'react-transition-group';
 import LazyLoad from 'react-lazyload';
 import FulfLoading from '@/components/FulfLoading';
 import './index.less';

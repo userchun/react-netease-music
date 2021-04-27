@@ -1,23 +1,22 @@
-import React, { memo, Fragment, FC, useEffect, useState, useMemo } from 'react';
+import React, {
+  memo,
+  Fragment,
+  FC,
+  useEffect,
+  useState,
+  useCallback,
+} from 'react';
 import { getNewSong } from '@/api';
 import Loading from '@/components/Loading';
 import { PlayCircleOutlined } from '@ant-design/icons';
-import LazyLoad from 'react-lazyload';
-import FulfLoading from '@/components/FulfLoading';
 import './index.less';
 interface Props {}
 
 const Index: FC<Props> = () => {
   const [songs, setSongs] = useState([]);
-
-  const { playMusic } = useMemo(() => {
-    return {
-      playMusic: (song: any): void => {
-        console.log(song);
-      },
-    };
+  const playMusic = useCallback((song: any) => {
+    console.log(song);
   }, []);
-
   useEffect(() => {
     const fn = async () => {
       const { result }: any = await getNewSong({});

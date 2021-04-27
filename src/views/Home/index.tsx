@@ -5,10 +5,10 @@ import Footer from '../Footer';
 import NavBar from '../NavBar';
 import './index.less';
 import { RouteConfig, renderRoutes } from 'react-router-config';
-interface Props {
-  route: RouteConfig;
-}
-const Index: FC<Props> = (props) => {
+
+const Index: FC = (props: any) => {
+  console.log(props);
+
   const history = useHistory();
   const location = useLocation();
   useEffect(() => {

@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react';
 import { renderRoutes } from 'react-router-config';
-import { HashRouter, Switch, useLocation } from 'react-router-dom';
-import routers from './routers';
+import { HashRouter, Switch } from 'react-router-dom';
+import routes from './routes';
 import Loading from './components/Loading';
 import { Provider } from 'react-redux';
 import store from './store';
@@ -14,7 +14,7 @@ function App() {
     <HashRouter>
       <Suspense fallback={<Loading />}>
         <Switch>
-          <Provider store={store}>{renderRoutes(routers)}</Provider>
+          <Provider store={store}>{renderRoutes(routes)}</Provider>
         </Switch>
       </Suspense>
     </HashRouter>
